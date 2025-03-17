@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Daily Mood Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Daily Mood Tracker</h1>
+    
+    <div class="mood-container" id="moodSelector">
+        <button class="mood-btn" onclick="selectMood('😊')">😊</button>
+        <button class="mood-btn" onclick="selectMood('😢')">😢</button>
+        <button class="mood-btn" onclick="selectMood('😐')">😐</button>
+        <button class="mood-btn" onclick="selectMood('🤩')">🤩</button>
+        <button class="mood-btn" onclick="selectMood('😤')">😤</button>
+    </div>
+
+    <div class="view-controls">
+        <div class="view-buttons">
+            <button class="view-btn active" onclick="changeView('daily')">Daily</button>
+            <button class="view-btn" onclick="changeView('weekly')">Weekly</button>
+            <button class="view-btn" onclick="changeView('monthly')">Monthly</button>
+            <button class="view-btn" onclick="changeView('calendar')">Calendar</button>
+        </div>
+    </div>
+
+    <div id="moodDisplay"></div>
+    <div id="calendar" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
