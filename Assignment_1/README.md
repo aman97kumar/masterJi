@@ -6,7 +6,7 @@ Mood Tracker is a simple web-based application that allows users to log and trac
 
 ## Live Demo
 
-Check out the live demo of the Mood Tracker app here: [Mood Tracker - Live Demo](https://aman97kumar.github.io/mood-tracker/)
+Check out the live demo of the Mood Tracker app here: [Mood Tracker - Live Demo](https://master-ji-hulp.vercel.app/)
 
 ### Features:
 - **Select Mood Emoji**: Users can select from a variety of mood emojis (happy, sad, neutral, excited, etc.) to reflect their emotional state for the day.
