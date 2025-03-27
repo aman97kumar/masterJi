@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+    height: 90vh;
+}
+
+.editor-section, .preview-section {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+textarea {
+    width: 100%;
+    height: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    font-family: monospace;
+}
+
+#preview {
+    height: calc(100% - 40px);
+    overflow-y: auto;
+}
+
+.controls {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Preview Styling */
+#preview h1 { font-size: 2em; margin: 0.67em 0; }
+#preview h2 { font-size: 1.5em; margin: 0.75em 0; }
+#preview h3 { font-size: 1.17em; margin: 0.83em 0; }
+#preview p { margin: 1em 0; }
+#preview code { 
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+#preview pre code {
+    display: block;
+    padding: 10px;
+    margin: 10px 0;
+    overflow-x: auto;
+}
+#preview ul, #preview ol { margin: 1em 0; padding-left: 40px; }
+#preview a { color: #0066cc; }
