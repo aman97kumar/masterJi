@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Books Library</h1>
+    </div>
+
+    <div class="controls">
+        <input type="text" class="search-bar" placeholder="Search by title or author...">
+        
+        <div class="view-controls">
+            <button id="gridView" class="active">Grid View</button>
+            <button id="listView">List View</button>
+        </div>
+
+        <div class="sort-controls">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="title">Title</option>
+                <option value="date">Published Date</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="books-container grid-view" id="booksContainer"></div>
+    <div class="loading" id="loading">Loading more books...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
